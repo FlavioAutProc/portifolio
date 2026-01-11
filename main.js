@@ -54,24 +54,24 @@ const projects = [
     image: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     status: "concluido"
   },
-  {
-    id: 7,
-    title: "Otimização de Rotas Logísticas",
-    description: "Análise e proposta de otimização para rotas de distribuição visando redução de custos e tempo.",
-    category: "processos",
-    tags: ["Logística", "Otimização", "Rotas"],
-    image: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    status: "em-desenvolvimento"
-  },
-  {
-    id: 8,
-    title: "Monitoramento de KPIs em Tempo Real",
-    description: "Solução para monitoramento contínuo de indicadores-chave de desempenho com alertas automáticos.",
-    category: "dados",
-    tags: ["Dashboard", "KPIs", "Monitoramento"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    status: "em-desenvolvimento"
-  }
+  // {
+  //   id: 7,
+  //   title: "Otimização de Rotas Logísticas",
+  //   description: "Análise e proposta de otimização para rotas de distribuição visando redução de custos e tempo.",
+  //   category: "processos",
+  //   tags: ["Logística", "Otimização", "Rotas"],
+  //   image: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  //   status: "em-desenvolvimento"
+  // },
+  // {
+  //   id: 8,
+  //   title: "Monitoramento de KPIs em Tempo Real",
+  //   description: "Solução para monitoramento contínuo de indicadores-chave de desempenho com alertas automáticos.",
+  //   category: "dados",
+  //   tags: ["Dashboard", "KPIs", "Monitoramento"],
+  //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  //   status: "em-desenvolvimento"
+  // }
 ];
 
 // Elementos DOM
