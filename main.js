@@ -1,4 +1,4 @@
-// Dados dos projetos com status "Em desenvolvimento"
+// Dados dos projetos atualizados
 const projects = [
   {
     id: 1,
@@ -6,7 +6,7 @@ const projects = [
     description: "Estudo de caso baseado em ambiente operacional real, com foco no controle de produção, padronização de processos e redução de falhas.",
     category: "processos",
     tags: ["Logística", "Processos", "Padronização"],
-    image: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     status: "em-desenvolvimento"
   },
   {
@@ -15,8 +15,8 @@ const projects = [
     description: "Mapeamento de fluxo operacional para identificação de gargalos, desperdícios e oportunidades de melhoria com base em observação prática.",
     category: "processos",
     tags: ["Análise de Processos", "Melhoria Contínua"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    status: "em-desenvolvimento"
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    status: "Em desenvolvimento"
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const projects = [
     description: "Dashboard simples para organização e visualização de indicadores operacionais, apoiando a tomada de decisão.",
     category: "dados",
     tags: ["Excel", "Power BI", "Indicadores"],
-    image: "https://images.unsplash.com/photo-1556155092-8707de31f9c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1556155092-8707de31f9c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     status: "em-desenvolvimento"
   },
   {
@@ -33,8 +33,8 @@ const projects = [
     description: "Estruturação de dados operacionais em planilhas e consultas básicas para melhorar controle, rastreabilidade e análise.",
     category: "dados",
     tags: ["Excel", "SQL Server", "Dados"],
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    status: "em-desenvolvimento"
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    status: "Em desenvolvimento"
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const projects = [
     description: "Automação simples de tarefas repetitivas com scripts para ganho de eficiência e redução de erros manuais.",
     category: "automacao",
     tags: ["Python", "Automação", "Eficiência"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     status: "em-desenvolvimento"
   },
   {
@@ -51,27 +51,9 @@ const projects = [
     description: "Protótipo de sistema básico para controle e organização de informações operacionais, focado em uso interno.",
     category: "automacao",
     tags: ["Lógica", "Controle", "Sistemas Simples"],
-    image: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    status: "em-desenvolvimento"
-  },
-  // {
-  //   id: 7,
-  //   title: "Otimização de Rotas Logísticas",
-  //   description: "Análise e proposta de otimização para rotas de distribuição visando redução de custos e tempo.",
-  //   category: "processos",
-  //   tags: ["Logística", "Otimização", "Rotas"],
-  //   image: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  //   status: "em-desenvolvimento"
-  // },
-  // {
-  //   id: 8,
-  //   title: "Monitoramento de KPIs em Tempo Real",
-  //   description: "Solução para monitoramento contínuo de indicadores-chave de desempenho com alertas automáticos.",
-  //   category: "dados",
-  //   tags: ["Dashboard", "KPIs", "Monitoramento"],
-  //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  //   status: "em-desenvolvimento"
-  // }
+    image: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    status: "Em desenvolvimento"
+  }
 ];
 
 // Elementos DOM
@@ -85,11 +67,17 @@ const backToTop = document.getElementById("backToTop");
 const preloader = document.querySelector(".preloader");
 const currentYear = document.getElementById("currentYear");
 const projectLoading = document.querySelector(".project-loading");
+const themeToggle = document.getElementById("themeToggle");
+const themeOptions = document.querySelectorAll(".theme-option");
+const body = document.body;
 
 // Inicialização
 document.addEventListener("DOMContentLoaded", () => {
   // Configurar ano atual
   currentYear.textContent = new Date().getFullYear();
+  
+  // Carregar tema salvo
+  loadTheme();
   
   // Inicializar animações
   initAnimations();
@@ -132,6 +120,45 @@ function setupEventListeners() {
   
   // Botão voltar ao topo
   backToTop.addEventListener("click", scrollToTop);
+  
+  // Alternar tema
+  themeToggle.addEventListener("click", toggleTheme);
+  
+  // Alternar tema pelos botões no footer
+  themeOptions.forEach(option => {
+    option.addEventListener("click", () => {
+      const theme = option.dataset.theme;
+      setTheme(theme);
+    });
+  });
+}
+
+// Tema
+function loadTheme() {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  setTheme(savedTheme);
+}
+
+function setTheme(theme) {
+  body.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  
+  // Atualizar botões ativos
+  themeOptions.forEach(option => {
+    option.classList.toggle('active', option.dataset.theme === theme);
+  });
+}
+
+function toggleTheme() {
+  const currentTheme = body.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  setTheme(newTheme);
+  
+  // Animar o botão de tema
+  themeToggle.style.transform = 'scale(1.2) rotate(180deg)';
+  setTimeout(() => {
+    themeToggle.style.transform = '';
+  }, 300);
 }
 
 // Menu mobile
@@ -206,7 +233,7 @@ function animateOnScroll() {
 // Inicializar animações de contagem
 function initAnimations() {
   // Animar números estatísticos
-  const statNumbers = document.querySelectorAll('.stat-number');
+  const statNumbers = document.querySelectorAll('.stat-value[data-count]');
   statNumbers.forEach(stat => {
     const target = parseInt(stat.getAttribute('data-count'));
     animateCount(stat, target);
@@ -216,7 +243,7 @@ function initAnimations() {
 // Animar contagem
 function animateCount(element, target) {
   let current = 0;
-  const increment = target / 100;
+  const increment = target / 50;
   const timer = setInterval(() => {
     current += increment;
     if (current >= target) {
@@ -225,7 +252,7 @@ function animateCount(element, target) {
     } else {
       element.textContent = Math.floor(current);
     }
-  }, 20);
+  }, 30);
 }
 
 // Renderizar projetos
@@ -270,13 +297,12 @@ function createProjectCard(project, index) {
   
   // Determinar texto do status
   let statusText = "";
-  let statusClass = "";
+  let statusClass = "project-badge";
   if (project.status === "em-desenvolvimento") {
     statusText = "Em desenvolvimento";
-    statusClass = "project-badge";
   } else if (project.status === "concluido") {
     statusText = "Concluído";
-    statusClass = "project-badge concluido";
+    statusClass += " concluido";
   }
   
   projectCard.innerHTML = `
@@ -290,7 +316,7 @@ function createProjectCard(project, index) {
       <div class="project-tags">
         ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
       </div>
-      <a href="#" class="btn btn-outline" style="padding: 12px 24px;">
+      <a href="#" class="btn btn-outline" style="margin-top: 20px;">
         <span>Ver Detalhes</span>
         <i class="fas fa-external-link-alt"></i>
       </a>
@@ -412,32 +438,6 @@ function scrollToTop() {
   });
 }
 
-// Efeito de digitação no hero (opcional)
-function initTypingEffect() {
-  const heroTitle = document.querySelector('.hero-title');
-  if (!heroTitle) return;
-  
-  const text = "Soluções Digitais para Logística";
-  let index = 0;
-  
-  function typeWriter() {
-    if (index < text.length) {
-      heroTitle.textContent += text.charAt(index);
-      index++;
-      setTimeout(typeWriter, 50);
-    }
-  }
-  
-  // Iniciar após 1 segundo
-  setTimeout(() => {
-    heroTitle.textContent = "";
-    typeWriter();
-  }, 1000);
-}
-
-// Iniciar efeito de digitação se for desejado
-// initTypingEffect();
-
 // Adicionar estilos para notificações
 const notificationStyles = document.createElement('style');
 notificationStyles.textContent = `
@@ -445,17 +445,17 @@ notificationStyles.textContent = `
     position: fixed;
     top: 100px;
     right: 30px;
-    background: white;
+    background: var(--lighter-color);
     padding: 20px 25px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xl);
     display: flex;
     align-items: center;
     gap: 15px;
     z-index: 9999;
     transform: translateX(100%);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: var(--transition-normal);
     max-width: 350px;
   }
   

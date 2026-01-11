@@ -11,15 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-theme="light">
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </button>
+
     <!-- Preloader -->
     <div class="preloader">
-      <div class="preloader-spinner"></div>
+      <div class="preloader-content">
+        <div class="preloader-logo">
+          <span class="logo-text">Flávio<span class="logo-dot">.</span></span>
+        </div>
+        <div class="preloader-spinner"></div>
+        <p class="preloader-text">Carregando soluções digitais...</p>
+      </div>
     </div>
 
     <!-- Header e Navegação -->
@@ -27,144 +39,233 @@
       <div class="container">
         <nav>
           <a href="#home" class="logo">
-            <span class="logo-text">Portifólio<span class="logo-dot">.</span></span>
+            <span class="logo-text"
+              >Portifólio<span class="logo-dot">.</span></span
+            >
           </a>
-          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
-          </button>
-          <ul class="nav-links" id="navLinks">
-            <li><a href="#home" class="nav-link">Início</a></li>
-            <li><a href="#about" class="nav-link">Sobre</a></li>
-            <li><a href="#projects" class="nav-link">Projetos</a></li>
-            <li><a href="#contact" class="nav-link">Contato</a></li>
-          </ul>
+          <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+              <li>
+                <a href="#home" class="nav-link"><span>Início</span></a>
+              </li>
+              <li>
+                <a href="#about" class="nav-link"><span>Sobre</span></a>
+              </li>
+              <li>
+                <a href="#projects" class="nav-link"><span>Projetos</span></a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link"><span>Contato</span></a>
+              </li>
+            </ul>
+            <button
+              class="mobile-menu-btn"
+              id="mobileMenuBtn"
+              aria-label="Menu"
+            >
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
       <div class="container">
         <div class="hero-content">
           <div class="hero-text animate-on-scroll">
+            <div class="hero-badge">
+              <span>Estudante de Logística</span>
+              <i class="fas fa-graduation-cap"></i>
+            </div>
             <h1 class="hero-title">
-              <span class="title-line">Olá, eu sou</span>
-              <span class="title-line">Flávio Monteiro</span>
+              <span class="title-line title-line-1">Olá,</span>
+              <span class="title-line title-line-2">eu sou</span>
+              <span class="title-line title-line-3">Flávio Monteiro</span>
             </h1>
             <p class="hero-subtitle">
-              Estudante de Logística com foco em análise de processos, automação e soluções digitais aplicadas a problemas operacionais.
+              Estudante de Logística, com foco em análise de processos,
+              automação e soluções digitais aplicadas a problemas reais do
+              ambiente operacional.
             </p>
             <div class="hero-buttons">
-              <a href="#projects" class="btn btn-primary">
-                <span>Ver Projetos</span>
+              <a href="#projects" class="btn btn-primary btn-icon">
+                <span>Explorar Projetos</span>
                 <i class="fas fa-arrow-right"></i>
               </a>
-              <a href="#contact" class="btn btn-outline">
-                <span>Contato</span>
-                <i class="fas fa-envelope"></i>
+              <a href="#contact" class="btn btn-outline btn-icon">
+                <span>Conectar</span>
+                <i class="fas fa-paper-plane"></i>
               </a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="stat-value" data-count="6">0</span>
+                <span class="stat-label">Projetos</span>
+              </div>
+              <div class="hero-stat">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Focado</span>
+              </div>
+              <div class="hero-stat">
+                <span class="stat-value">∞</span>
+                <span class="stat-label">Soluções</span>
+              </div>
             </div>
           </div>
           <div class="hero-image animate-on-scroll">
-            <div class="image-container">
-              <img src="image (2).jpg" alt="Flávio Monteiro" class="profile-img" />
-              <div class="image-border"></div>
+            <div class="image-wrapper">
+              <div class="image-container">
+                <img
+                  src="image (2).jpg"
+                  alt="Flávio Monteiro"
+                  class="profile-img"
+                />
+                <div class="image-glow"></div>
+              </div>
               <div class="image-dots">
                 <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="floating-card">
+                <i class="fas fa-chart-line"></i>
+                <span>Análise de Dados</span>
+              </div>
+              <div class="floating-card">
+                <i class="fas fa-robot"></i>
+                <span>Automação</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="scroll-indicator">
-          <span>Scroll</span>
-          <div class="scroll-line"></div>
-        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Explore</span>
       </div>
     </section>
 
     <!-- Sobre -->
     <section id="about">
       <div class="container">
-        <div class="section-title">
-          <h2><span class="title-number">01</span>Sobre Mim</h2>
-          <p class="section-subtitle">Minha abordagem e competências</p>
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="section-badge">Competências</div>
+            <h2 class="section-title">Minha Abordagem</h2>
+            <p class="section-subtitle">
+              Soluções digitais aplicadas à logística e melhoria de processos
+            </p>
+          </div>
+          <div class="section-description">
+            <p>
+              Combinando conhecimento em logística com habilidades técnicas para
+              criar soluções eficientes e escaláveis.
+            </p>
+          </div>
         </div>
-        <div class="about-content">
-          <div class="about-text animate-on-scroll">
-            <h3>Transformando operações através da tecnologia</h3>
-            <p>
-              Sou estudante de Logística, em formação, com foco em análise de
-              processos, soluções práticas e automação de rotinas operacionais.
-              Atualmente, minha experiência está concentrada na observação
-              crítica das operações da empresa onde atuo, identificando
-              gargalos, falhas de controle e oportunidades de melhoria.
-            </p>
-            <p>
-              Meu diferencial está na capacidade de entender o problema
-              operacional, estruturar a lógica da solução e aplicar tecnologia
-              como ferramenta — não como fim. Tenho interesse especial em
-              automação de processos, análise de dados e uso de ferramentas
-              digitais aplicadas à logística.
-            </p>
-            <div class="stats">
-              <div class="stat-item">
-                <span class="stat-number" data-count="6">0</span>
-                <span class="stat-label">Projetos</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-count="0">0</span>
-                <span class="stat-label">Anos Experiência</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-count="100">0</span>
-                <span class="stat-label">% Focado</span>
+
+        <div class="about-grid">
+          <div class="about-main animate-on-scroll">
+            <div class="about-card">
+              <h3>Sobre min</h3>
+              <p>
+                Sou estudante de Logística, em formação, com foco em análise de
+                processos, soluções práticas e automação de rotinas
+                operacionais. Atualmente, minha experiência está concentrada na
+                observação crítica das operações da empresa onde atuo,
+                identificando gargalos, falhas de controle e oportunidades de
+                melhoria. A partir disso, desenvolvo cases práticos, sistemas
+                simples e propostas de solução voltadas à eficiência,
+                organização e tomada de decisão baseada em dados. Não atuo como
+                desenvolvedor sênior e não me posiciono como tal.
+              </p>
+              <p>
+                Meu diferencial está na capacidade de entender o problema
+                operacional, estruturar a lógica da solução e aplicar tecnologia
+                como ferramenta — não como fim. Tenho interesse especial em
+                automação de processos, análise de dados e uso de ferramentas
+                digitais aplicadas à logística, com o objetivo de transformar
+                operações manuais e ineficientes em processos mais claros,
+                mensuráveis e escaláveis.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Excel</span>
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">Processos</span>
+                <span class="tech-tag">Automação</span>
               </div>
             </div>
           </div>
-          <div class="skills animate-on-scroll">
-            <div class="skill-card">
-              <div class="skill-icon">
-                <i class="fas fa-calculator"></i>
+
+          <div class="skills-grid animate-on-scroll">
+            <div class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h4>Dados & Automação</h4>
               </div>
-              <h4>Análise de Dados & Automação</h4>
-              <p>
-                Python (automação de rotinas, scripts simples e lógica de
-                sistemas) SQL Server (consultas básicas e organização de dados)
-                Excel (controle operacional, análises e apoio à decisão)
-              </p>
+              <ul class="skill-list">
+                <li>Python para automação</li>
+                <li>SQL Server (consultas)</li>
+                <li>Excel avançado</li>
+                <li>Power BI / Dashboards</li>
+              </ul>
             </div>
-            <div class="skill-card">
-              <div class="skill-icon">
-                <i class="fas fa-cogs"></i>
+
+            <div class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h4>Soluções Digitais</h4>
               </div>
-              <h4>Sistemas e Soluções Digitais</h4>
               <p>
                 Desenvolvimento de sistemas simples para controle e organização
                 de processos Estruturação de fluxos lógicos e regras de negócio
               </p>
             </div>
-            <div class="skill-card">
-              <div class="skill-icon">
-                <i class="fas fa-random"></i>
+
+            <div class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-icon">
+                  <i class="fas fa-route"></i>
+                </div>
+                <h4>Logística & Processos</h4>
               </div>
-              <h4>Logística & Processos</h4>
-              <p>
-                Análise de processos operacionais Identificação de gargalos e
-                falhas de controle Propostas de melhoria com base em dados e
-                observação prática
-              </p>
+              <ul class="skill-list">
+                <li>Análise de processos</li>
+                <li>Identificação de gargalos</li>
+                <li>Propostas de melhoria</li>
+                <li>Padronização</li>
+              </ul>
             </div>
-            <div class="skill-card">
-              <div class="skill-icon">
-                <i class="fas fa-chart-pie"></i>
+
+            <div class="skill-category">
+              <div class="skill-category-header">
+                <div class="skill-icon">
+                  <i class="fas fa-chart-pie"></i>
+                </div>
+                <h4>Visualização</h4>
               </div>
-              <h4>Visualização & Organização</h4>
-              <p>
-                Dashboards básicos (Power BI / planilhas) Organização e
-                padronização de dados Documentação de processos e cases
-              </p>
+              <ul class="skill-list">
+                <li>Dashboards intuitivos</li>
+                <li>Organização de dados</li>
+                <li>Documentação</li>
+                <li>Relatórios analíticos</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -174,29 +275,42 @@
     <!-- Projetos -->
     <section class="projects" id="projects">
       <div class="container">
-        <div class="section-title">
-          <h2><span class="title-number">02</span>Meus Projetos</h2>
-          <p class="section-subtitle">Casos práticos e soluções implementadas</p>
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="section-badge">Portfólio</div>
+            <h2 class="section-title">Projetos Implementados</h2>
+            <p class="section-subtitle">Casos práticos de soluções aplicadas</p>
+          </div>
         </div>
+
         <div class="project-filter">
           <button class="filter-btn active" data-filter="all">
             <span>Todos</span>
           </button>
           <button class="filter-btn" data-filter="processos">
+            <i class="fas fa-route"></i>
             <span>Processos</span>
           </button>
           <button class="filter-btn" data-filter="dados">
+            <i class="fas fa-chart-bar"></i>
             <span>Dados</span>
           </button>
           <button class="filter-btn" data-filter="automacao">
+            <i class="fas fa-robot"></i>
             <span>Automação</span>
           </button>
         </div>
+
         <div class="project-grid" id="projectGrid">
           <!-- Projetos serão inseridos via JavaScript -->
         </div>
+
         <div class="project-loading">
-          <div class="loading-spinner"></div>
+          <div class="loading-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -204,80 +318,139 @@
     <!-- Contato -->
     <section id="contact">
       <div class="container">
-        <div class="section-title">
-          <h2><span class="title-number">03</span>Entre em Contato</h2>
-          <p class="section-subtitle">Vamos conversar sobre seu projeto</p>
-        </div>
-        <div class="contact-content">
-          <div class="contact-info animate-on-scroll">
-            <h3>Conecte-se comigo</h3>
-            <p>
-              Aberto a oportunidades de aprendizado, estágio e projetos
-              colaborativos. Fico à disposição para trocar ideias, discutir
-              estudos de caso e conversar sobre soluções aplicadas à logística,
-              processos e automação.
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="section-badge">Conecte-se</div>
+            <h2 class="section-title">Vamos Conversar</h2>
+            <p class="section-subtitle">
+              Pronto para transformar operações juntos
             </p>
-            <div class="contact-details">
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-text">
-                  <h4>E-mail</h4>
-                  <a href="mailto:flavio.ms@outlook.com.br">flavio.ms@outlook.com.br</a>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info animate-on-scroll">
+            <div class="contact-card">
+              <h3>Disponível para oportunidades</h3>
+              <p>
+                Aberto a oportunidades de aprendizado, estágio e projetos
+                colaborativos. Fico à disposição para trocar ideias, discutir
+                estudos de caso e conversar sobre soluções aplicadas à
+                logística, processos e automação.
+              </p>
+
+              <div class="contact-methods">
+                <a
+                  href="mailto:flavio.ms@outlook.com.br"
+                  class="contact-method"
+                >
+                  <div class="method-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="method-content">
+                    <span class="method-label">E-mail</span>
+                    <span class="method-value">flavio.ms@outlook.com.br</span>
+                  </div>
+                  <i class="fas fa-arrow-right method-arrow"></i>
+                </a>
+
+                <a href="tel:+5531980217295" class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="method-content">
+                    <span class="method-label">Telefone</span>
+                    <span class="method-value">+55 (31) 9 8021-7295</span>
+                  </div>
+                  <i class="fas fa-arrow-right method-arrow"></i>
+                </a>
+
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="method-content">
+                    <span class="method-label">Localização</span>
+                    <span class="method-value">Alagoas, Brasil</span>
+                  </div>
                 </div>
               </div>
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="contact-text">
-                  <h4>Telefone</h4>
-                  <a href="tel:+5531980217295">+55 (31) 9 8021-7295</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="contact-text">
-                  <h4>Localização</h4>
-                  <p>Alagoas, Brasil</p>
-                </div>
+
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
               </div>
             </div>
           </div>
+
           <div class="contact-form animate-on-scroll">
             <form id="contactForm">
               <div class="form-group">
-                <label for="name">Nome</label>
-                <div class="input-container">
-                  <input type="text" id="name" class="form-control" required />
-                  <i class="fas fa-user input-icon"></i>
-                </div>
+                <label for="name">
+                  <i class="fas fa-user"></i>
+                  <span>Nome Completo</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  required
+                  placeholder="Seu nome"
+                />
               </div>
+
               <div class="form-group">
-                <label for="email">E-mail</label>
-                <div class="input-container">
-                  <input type="email" id="email" class="form-control" required />
-                  <i class="fas fa-envelope input-icon"></i>
-                </div>
+                <label for="email">
+                  <i class="fas fa-envelope"></i>
+                  <span>E-mail</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  required
+                  placeholder="seu@email.com"
+                />
               </div>
+
               <div class="form-group">
-                <label for="subject">Assunto</label>
-                <div class="input-container">
-                  <input type="text" id="subject" class="form-control" required />
-                  <i class="fas fa-tag input-icon"></i>
-                </div>
+                <label for="subject">
+                  <i class="fas fa-tag"></i>
+                  <span>Assunto</span>
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  required
+                  placeholder="Sobre o que quer conversar?"
+                />
               </div>
+
               <div class="form-group">
-                <label for="message">Mensagem</label>
-                <div class="input-container">
-                  <textarea id="message" class="form-control" required></textarea>
-                  <i class="fas fa-comment input-icon"></i>
-                </div>
+                <label for="message">
+                  <i class="fas fa-comment"></i>
+                  <span>Mensagem</span>
+                </label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  required
+                  placeholder="Descreva sua ideia ou proposta..."
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">
+
+              <button type="submit" class="btn btn-primary btn-icon full-width">
                 <span>Enviar Mensagem</span>
                 <i class="fas fa-paper-plane"></i>
               </button>
@@ -291,60 +464,105 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo">
+          <div class="footer-brand">
             <a href="#home" class="logo">
-              <span class="logo-text">Flávio<span class="logo-dot">.</span></span>
+              <span class="logo-text"
+                >Flávio<span class="logo-dot">.</span></span
+              >
             </a>
-            <p>Soluções digitais aplicadas à logística e melhoria de processos</p>
+            <p class="footer-tagline">
+              Soluções digitais aplicadas à logística e melhoria de processos
+            </p>
+            <p class="footer-mission">
+              Transformando operações através da tecnologia e análise crítica
+            </p>
           </div>
-          <div class="footer-links">
+
+          <div class="footer-grid">
             <div class="footer-column">
-              <h4>Navegação</h4>
+              <h4>Navegação Rápida</h4>
               <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li>
+                  <a href="#home"
+                    ><i class="fas fa-chevron-right"></i> Início</a
+                  >
+                </li>
+                <li>
+                  <a href="#about"
+                    ><i class="fas fa-chevron-right"></i> Sobre</a
+                  >
+                </li>
+                <li>
+                  <a href="#projects"
+                    ><i class="fas fa-chevron-right"></i> Projetos</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact"
+                    ><i class="fas fa-chevron-right"></i> Contato</a
+                  >
+                </li>
               </ul>
             </div>
+
             <div class="footer-column">
               <h4>Competências</h4>
               <ul>
-                <li>Análise de Dados</li>
-                <li>Automação de Processos</li>
-                <li>Logística Operacional</li>
-                <li>Soluções Digitais</li>
+                <li><i class="fas fa-check"></i> Análise de Dados</li>
+                <li><i class="fas fa-check"></i> Automação de Processos</li>
+                <li><i class="fas fa-check"></i> Logística Operacional</li>
+                <li><i class="fas fa-check"></i> Soluções Digitais</li>
               </ul>
             </div>
+
             <div class="footer-column">
-              <h4>Conecte-se</h4>
-              <div class="social-links">
-                <a href="#" class="social-link" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="social-link" aria-label="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="social-link" aria-label="Behance">
-                  <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="social-link" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
+              <h4>Recursos</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-file-alt"></i> Estudos de Caso</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-code"></i> Scripts Úteis</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-chart-line"></i> Métricas</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-book"></i> Documentação</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="copyright">
-          <p>&copy; <span id="currentYear"></span> Flávio Monteiro. Todos os direitos reservados.</p>
-          <p class="footer-note">Desenvolvido com foco em eficiência e resultados</p>
+
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>
+              &copy; <span id="currentYear"></span> Flávio Monteiro. Todos os
+              direitos reservados.
+            </p>
+            <p class="footer-note">
+              Desenvolvido com foco em eficiência e resultados mensuráveis
+            </p>
+          </div>
+          <div class="footer-theme">
+            <span>Modo:</span>
+            <div class="theme-switch">
+              <button class="theme-option active" data-theme="light">
+                Claro
+              </button>
+              <button class="theme-option" data-theme="dark">Escuro</button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
     <!-- Botão Voltar ao Topo -->
     <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
-      <i class="fas fa-chevron-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="main.js"></script>
