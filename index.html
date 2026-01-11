@@ -4,179 +4,259 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flávio Monteiro | Soluções Digitais Aplicadas à Logística</title>
+    <meta
+      name="description"
+      content="Portfólio de Flávio Monteiro - Estudante de Logística com foco em análise de processos, automação e soluções digitais aplicadas a problemas operacionais."
+    />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body data-theme="light">
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
-      <i class="fas fa-sun"></i>
-      <i class="fas fa-moon"></i>
-    </button>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+    />
+  </head>
+  <body>
     <!-- Preloader -->
     <div class="preloader">
       <div class="preloader-content">
-        <div class="preloader-logo">
-          <span class="logo-text">Flávio<span class="logo-dot">.</span></span>
-        </div>
-        <div class="preloader-spinner"></div>
-        <p class="preloader-text">Carregando soluções digitais...</p>
+       <img src="fm_logistica-removebg-preview.png" alt="">
+        <div class="preloader-subtitle">Carregando soluções digitai...</div>
       </div>
     </div>
 
-    <!-- Header e Navegação -->
+    <!-- Cursor Personalizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Header -->
     <header id="header">
       <div class="container">
-        <nav>
+        <nav class="navbar">
           <a href="#home" class="logo">
             <span class="logo-text"
               >Portifólio<span class="logo-dot">.</span></span
             >
           </a>
-          <div class="nav-right">
-            <ul class="nav-links" id="navLinks">
+
+          <div class="nav-menu" id="navMenu">
+            <div class="nav-background"></div>
+            <ul class="nav-links">
               <li>
-                <a href="#home" class="nav-link"><span>Início</span></a>
+                <a href="#home" class="nav-link"
+                  ><span class="nav-number">01</span>Início</a
+                >
               </li>
               <li>
-                <a href="#about" class="nav-link"><span>Sobre</span></a>
+                <a href="#about" class="nav-link"
+                  ><span class="nav-number">02</span>Sobre</a
+                >
               </li>
               <li>
-                <a href="#projects" class="nav-link"><span>Projetos</span></a>
+                <a href="#projects" class="nav-link"
+                  ><span class="nav-number">03</span>Projetos</a
+                >
               </li>
               <li>
-                <a href="#contact" class="nav-link"><span>Contato</span></a>
+                <a href="#contact" class="nav-link"
+                  ><span class="nav-number">04</span>Contato</a
+                >
               </li>
             </ul>
-            <button
-              class="mobile-menu-btn"
-              id="mobileMenuBtn"
-              aria-label="Menu"
-            >
-              <span class="menu-line"></span>
-              <span class="menu-line"></span>
-              <span class="menu-line"></span>
-            </button>
+
+            <div class="nav-footer">
+              <div class="nav-contact">
+                <a href="mailto:flavio.ms@outlook.com.br" class="nav-email">
+                  <i class="fas fa-envelope"></i>
+                  flavio.ms@outlook.com.br
+                </a>
+              </div>
+              <div class="nav-social">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
+
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </button>
         </nav>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-      <div class="hero-bg-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
+      <div class="hero-background">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+        <div class="hero-shape shape-3"></div>
+        <div class="hero-grid"></div>
       </div>
+
       <div class="container">
         <div class="hero-content">
-          <div class="hero-text animate-on-scroll">
+          <div class="hero-text">
             <div class="hero-badge">
-              <span>Estudante de Logística</span>
+              <span class="badge-text">Disponível para oportunidades</span>
               <i class="fas fa-graduation-cap"></i>
+              <div class="badge-pulse"></div>
             </div>
+
             <h1 class="hero-title">
-              <span class="title-line title-line-1">Olá,</span>
-              <span class="title-line title-line-2">eu sou</span>
-              <span class="title-line title-line-3">Flávio Monteiro</span>
+              <span class="title-line">Olá, eu sou</span>
+              <span class="title-line highlight">Flávio Monteiro</span>
             </h1>
+
             <p class="hero-subtitle">
               Estudante de Logística, com foco em análise de processos,
               automação e soluções digitais aplicadas a problemas reais do
               ambiente operacional.
             </p>
-            <div class="hero-buttons">
-              <a href="#projects" class="btn btn-primary btn-icon">
-                <span>Explorar Projetos</span>
-                <i class="fas fa-arrow-right"></i>
-              </a>
-              <a href="#contact" class="btn btn-outline btn-icon">
-                <span>Conectar</span>
-                <i class="fas fa-paper-plane"></i>
-              </a>
-            </div>
+
             <div class="hero-stats">
-              <div class="hero-stat">
-                <span class="stat-value" data-count="6">0</span>
-                <span class="stat-label">Projetos</span>
+              <div class="stat">
+                <div class="stat-number" data-count="100">0</div>
+                <div class="stat-label">% Focado</div>
               </div>
-              <div class="hero-stat">
-                <span class="stat-value">100%</span>
-                <span class="stat-label">Focado</span>
+              <div class="stat">
+                <div class="stat-number" data-count="6">0</div>
+                <div class="stat-label">Projetos</div>
               </div>
-              <div class="hero-stat">
-                <span class="stat-value">∞</span>
-                <span class="stat-label">Soluções</span>
+              <div class="stat">
+                <div class="stat-number" data-count="24">0</div>
+                <div class="stat-label">/7 Disponível</div>
               </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <span>Ver Projetos</span>
+                <div class="btn-icon">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="btn-hover"></div>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Contato Direto</span>
+                <div class="btn-icon">
+                  <i class="fas fa-paper-plane"></i>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="hero-image animate-on-scroll">
-            <div class="image-wrapper">
-              <div class="image-container">
-                <img
-                  src="image (2).jpg"
-                  alt="Flávio Monteiro"
-                  class="profile-img"
-                />
-                <div class="image-glow"></div>
+
+          <div class="hero-visual">
+            <div class="visual-container">
+              <div class="profile-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img
+                      src="image (2).jpg"
+                      alt="Flávio Monteiro"
+                      class="profile-img"
+                    />
+                    <div class="card-overlay">
+                      <div class="card-tech">
+                        <div class="tech-item">
+                          <i class="fab fa-python"></i>
+                          <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                          <i class="fas fa-database"></i>
+                          <span>SQL</span>
+                        </div>
+                        <div class="tech-item">
+                          <i class="fas fa-chart-line"></i>
+                          <span>BI</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-glow"></div>
               </div>
-              <div class="image-dots">
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-              </div>
-              <div class="floating-card">
-                <i class="fas fa-chart-line"></i>
-                <span>Análise de Dados</span>
-              </div>
-              <div class="floating-card">
-                <i class="fas fa-robot"></i>
-                <span>Automação</span>
+
+              <div class="floating-elements">
+                <div class="float-element element-1">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="float-element element-2">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="float-element element-3">
+                  <i class="fas fa-robot"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="scroll-indicator">
-        <div class="scroll-line"></div>
-        <span>Explore</span>
+
+        <div class="hero-scroll">
+          <div class="scroll-text">Scroll</div>
+          <div class="scroll-line">
+            <div class="scroll-dot"></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Sobre -->
     <section id="about">
+      <div class="section-background">
+        <div class="bg-pattern"></div>
+      </div>
+
       <div class="container">
         <div class="section-header">
-          <div class="section-title-wrapper">
-            <div class="section-badge">Competências</div>
-            <h2 class="section-title">Minha Abordagem</h2>
-            <p class="section-subtitle">
-              Soluções digitais aplicadas à logística e melhoria de processos
-            </p>
+          <div class="section-label">
+            <span class="label-number">01</span>
+            <span class="label-text">Sobre Mim</span>
           </div>
-          <div class="section-description">
-            <p>
-              Combinando conhecimento em logística com habilidades técnicas para
-              criar soluções eficientes e escaláveis.
-            </p>
-          </div>
+          <h2 class="section-title">
+            Transformando operações através da tecnologia
+          </h2>
+          <p class="section-subtitle">Minha abordagem e competências</p>
         </div>
 
-        <div class="about-grid">
-          <div class="about-main animate-on-scroll">
-            <div class="about-card">
-              <h3>Sobre min</h3>
+        <div class="about-content">
+          <div class="about-text">
+            <div class="about-highlight">
+              <div class="highlight-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <div class="highlight-content">
+                <h3>Missão</h3>
+                <p>
+                  Aplicar tecnologia como ferramenta para resolver problemas
+                  operacionais reais na logística.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-paragraphs">
               <p>
                 Sou estudante de Logística, em formação, com foco em análise de
                 processos, soluções práticas e automação de rotinas
@@ -186,86 +266,240 @@
                 melhoria. A partir disso, desenvolvo cases práticos, sistemas
                 simples e propostas de solução voltadas à eficiência,
                 organização e tomada de decisão baseada em dados. Não atuo como
-                desenvolvedor sênior e não me posiciono como tal.
-              </p>
-              <p>
-                Meu diferencial está na capacidade de entender o problema
+                desenvolvedor sênior e não me posiciono como tal. 
+                <p>
+                    Meu
+                diferencial está na capacidade de entender o problema
                 operacional, estruturar a lógica da solução e aplicar tecnologia
                 como ferramenta — não como fim. Tenho interesse especial em
                 automação de processos, análise de dados e uso de ferramentas
                 digitais aplicadas à logística, com o objetivo de transformar
                 operações manuais e ineficientes em processos mais claros,
                 mensuráveis e escaláveis.
+                </p>
               </p>
+            </div>
 
-              <div class="tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">SQL</span>
-                <span class="tech-tag">Excel</span>
-                <span class="tech-tag">Power BI</span>
-                <span class="tech-tag">Processos</span>
-                <span class="tech-tag">Automação</span>
+            <div class="about-timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-content">
+                  <h4>Foco em Automação</h4>
+                  <p>
+                    Desenvolvimento de scripts Python para otimização de
+                    processos
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">Presente</div>
+                <div class="timeline-content">
+                  <h4>Análise de Processos</h4>
+                  <p>Identificação de melhorias em operações logísticas</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="skills-grid animate-on-scroll">
+          <div class="skills-grid">
             <div class="skill-category">
-              <div class="skill-category-header">
-                <div class="skill-icon">
-                  <i class="fas fa-database"></i>
+              <div class="category-header">
+                <h3><i class="fas fa-calculator"></i> Análise & Dados</h3>
+                <div class="category-progress">
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 25%"></div>
+                  </div>
+                  <span>0%</span>
                 </div>
-                <h4>Dados & Automação</h4>
               </div>
-              <ul class="skill-list">
-                <li>Python para automação</li>
-                <li>SQL Server (consultas)</li>
-                <li>Excel avançado</li>
-                <li>Power BI / Dashboards</li>
-              </ul>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Python</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">SQL Server</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Excel Avançado</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="skill-category">
-              <div class="skill-category-header">
-                <div class="skill-icon">
-                  <i class="fas fa-cogs"></i>
+              <div class="category-header">
+                <h3><i class="fas fa-cogs"></i> Sistemas & Soluções</h3>
+                <div class="category-progress">
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 25%"></div>
+                  </div>
+                  <span>0%</span>
                 </div>
-                <h4>Soluções Digitais</h4>
               </div>
-              <p>
-                Desenvolvimento de sistemas simples para controle e organização
-                de processos Estruturação de fluxos lógicos e regras de negócio
-              </p>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Desenvolvimento de Sistemas</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Lógica de Negócio</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Documentação</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="skill-category">
-              <div class="skill-category-header">
-                <div class="skill-icon">
-                  <i class="fas fa-route"></i>
+              <div class="category-header">
+                <h3><i class="fas fa-random"></i> Logística & Processos</h3>
+                <div class="category-progress">
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 25%"></div>
+                  </div>
+                  <span>0%</span>
                 </div>
-                <h4>Logística & Processos</h4>
               </div>
-              <ul class="skill-list">
-                <li>Análise de processos</li>
-                <li>Identificação de gargalos</li>
-                <li>Propostas de melhoria</li>
-                <li>Padronização</li>
-              </ul>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Análise de Processos</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Identificação de Gargalos</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Propostas de Melhoria</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="skill-category">
-              <div class="skill-category-header">
-                <div class="skill-icon">
-                  <i class="fas fa-chart-pie"></i>
+              <div class="category-header">
+                <h3><i class="fas fa-chart-pie"></i> Visualização & BI</h3>
+                <div class="category-progress">
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 25%"></div>
+                  </div>
+                  <span>0%</span>
                 </div>
-                <h4>Visualização</h4>
               </div>
-              <ul class="skill-list">
-                <li>Dashboards intuitivos</li>
-                <li>Organização de dados</li>
-                <li>Documentação</li>
-                <li>Relatórios analíticos</li>
-              </ul>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Power BI</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Dashboards</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Análise de Dados</span>
+                  <div class="skill-level">
+                    <div class="level-dots">
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -274,42 +508,67 @@
 
     <!-- Projetos -->
     <section class="projects" id="projects">
+      <div class="projects-background">
+        <canvas id="projectsCanvas"></canvas>
+      </div>
+
       <div class="container">
         <div class="section-header">
-          <div class="section-title-wrapper">
-            <div class="section-badge">Portfólio</div>
-            <h2 class="section-title">Projetos Implementados</h2>
-            <p class="section-subtitle">Casos práticos de soluções aplicadas</p>
+          <div class="section-label">
+            <span class="label-number">02</span>
+            <span class="label-text">Meus Projetos</span>
+          </div>
+          <h2 class="section-title">Casos práticos e soluções implementadas</h2>
+          <p class="section-subtitle">
+            Projetos com status interativo "Em desenvolvimento"
+          </p>
+        </div>
+
+        <div class="projects-filter">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+              <span class="filter-text">Todos</span>
+              <span class="filter-count">6</span>
+            </button>
+            <button class="filter-btn" data-filter="processos">
+              <span class="filter-text">Processos</span>
+              <span class="filter-count">2</span>
+            </button>
+            <button class="filter-btn" data-filter="dados">
+              <span class="filter-text">Dados</span>
+              <span class="filter-count">2</span>
+            </button>
+            <button class="filter-btn" data-filter="automacao">
+              <span class="filter-text">Automação</span>
+              <span class="filter-count">2</span>
+            </button>
           </div>
         </div>
 
-        <div class="project-filter">
-          <button class="filter-btn active" data-filter="all">
-            <span>Todos</span>
-          </button>
-          <button class="filter-btn" data-filter="processos">
-            <i class="fas fa-route"></i>
-            <span>Processos</span>
-          </button>
-          <button class="filter-btn" data-filter="dados">
-            <i class="fas fa-chart-bar"></i>
-            <span>Dados</span>
-          </button>
-          <button class="filter-btn" data-filter="automacao">
-            <i class="fas fa-robot"></i>
-            <span>Automação</span>
-          </button>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Projetos serão renderizados via JavaScript -->
         </div>
 
-        <div class="project-grid" id="projectGrid">
-          <!-- Projetos serão inseridos via JavaScript -->
-        </div>
-
-        <div class="project-loading">
-          <div class="loading-dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+        <div class="projects-footer">
+          <div class="projects-stats">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Em desenvolvimento</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Concluídos</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -319,141 +578,177 @@
     <section id="contact">
       <div class="container">
         <div class="section-header">
-          <div class="section-title-wrapper">
-            <div class="section-badge">Conecte-se</div>
-            <h2 class="section-title">Vamos Conversar</h2>
-            <p class="section-subtitle">
-              Pronto para transformar operações juntos
-            </p>
+          <div class="section-label">
+            <span class="label-number">03</span>
+            <span class="label-text">Entre em Contato</span>
           </div>
+          <h2 class="section-title">Vamos conversar</h2>
+          <p class="section-subtitle">
+            Aberto a oportunidades de aprendizado, estágio e projetos
+            colaborativos
+          </p>
         </div>
 
-        <div class="contact-grid">
-          <div class="contact-info animate-on-scroll">
+        <div class="contact-content">
+          <div class="contact-info">
             <div class="contact-card">
-              <h3>Disponível para oportunidades</h3>
-              <p>
-                Aberto a oportunidades de aprendizado, estágio e projetos
-                colaborativos. Fico à disposição para trocar ideias, discutir
-                estudos de caso e conversar sobre soluções aplicadas à
-                logística, processos e automação.
-              </p>
+              <div class="card-header">
+                <h3><i class="fas fa-handshake"></i> Conecte-se comigo</h3>
+              </div>
+              <div class="card-body">
+                <p>
+                  Aberto a oportunidades de aprendizado, estágio e projetos
+                  colaborativos. Fico à disposição para trocar ideias, discutir
+                  estudos de caso e conversar sobre soluções aplicadas à
+                  logística, processos e automação.
+                </p>
 
-              <div class="contact-methods">
-                <a
-                  href="mailto:flavio.ms@outlook.com.br"
-                  class="contact-method"
-                >
-                  <div class="method-icon">
-                    <i class="fas fa-envelope"></i>
+                <div class="contact-details">
+                  <div class="detail-item">
+                    <div class="detail-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="detail-content">
+                      <h4>E-mail Principal</h4>
+                      <a
+                        href="mailto:flavio.ms@outlook.com.br"
+                        class="detail-link"
+                      >
+                        flavio.ms@outlook.com.br
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
                   </div>
-                  <div class="method-content">
-                    <span class="method-label">E-mail</span>
-                    <span class="method-value">flavio.ms@outlook.com.br</span>
-                  </div>
-                  <i class="fas fa-arrow-right method-arrow"></i>
-                </a>
 
-                <a href="tel:+5531980217295" class="contact-method">
-                  <div class="method-icon">
-                    <i class="fas fa-phone"></i>
+                  <div class="detail-item">
+                    <div class="detail-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="detail-content">
+                      <h4>Telefone / WhatsApp</h4>
+                      <a href="tel:+5531980217295" class="detail-link">
+                        +55 (31) 9 8021-7295
+                        <i class="fab fa-whatsapp"></i>
+                      </a>
+                    </div>
                   </div>
-                  <div class="method-content">
-                    <span class="method-label">Telefone</span>
-                    <span class="method-value">+55 (31) 9 8021-7295</span>
-                  </div>
-                  <i class="fas fa-arrow-right method-arrow"></i>
-                </a>
 
-                <div class="contact-method">
-                  <div class="method-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div class="method-content">
-                    <span class="method-label">Localização</span>
-                    <span class="method-value">Alagoas, Brasil</span>
+                  <div class="detail-item">
+                    <div class="detail-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                      <h4>Localização</h4>
+                      <p class="detail-text">Alagoas, Brasil</p>
+                      <span class="detail-note"
+                        >Disponível para trabalho remoto</span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="social-links">
-                <a href="#" class="social-link" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="social-link" aria-label="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="social-link" aria-label="Facebook">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" class="social-link" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
+            <div class="contact-availability">
+              <h4>Disponibilidade</h4>
+              <div class="availability-slots">
+                <div class="slot active">
+                  <span class="slot-day">Seg - Sex</span>
+                  <span class="slot-time">00:00 - 00:00</span>
+                </div>
+                <div class="slot">
+                  <span class="slot-day">Sábado</span>
+                  <span class="slot-time">00:00 - 00:00</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="contact-form animate-on-scroll">
-            <form id="contactForm">
-              <div class="form-group">
-                <label for="name">
-                  <i class="fas fa-user"></i>
-                  <span>Nome Completo</span>
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  class="form-control"
-                  required
-                  placeholder="Seu nome"
-                />
-              </div>
+          <div class="contact-form">
+            <div class="form-header">
+              <h3><i class="fas fa-paper-plane"></i> Envie sua mensagem</h3>
+              <p>Respondo em até 24 horas úteis</p>
+            </div>
 
-              <div class="form-group">
-                <label for="email">
-                  <i class="fas fa-envelope"></i>
-                  <span>E-mail</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control"
-                  required
-                  placeholder="seu@email.com"
-                />
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">
+                    <i class="fas fa-user"></i>
+                    Nome Completo
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-input"
+                    required
+                    placeholder="Digite seu nome completo"
+                  />
+                  <div class="input-border"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    <i class="fas fa-envelope"></i>
+                    E-mail
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-input"
+                    required
+                    placeholder="seu@email.com"
+                  />
+                  <div class="input-border"></div>
+                </div>
               </div>
 
               <div class="form-group">
                 <label for="subject">
                   <i class="fas fa-tag"></i>
-                  <span>Assunto</span>
+                  Assunto
                 </label>
                 <input
                   type="text"
                   id="subject"
-                  class="form-control"
+                  class="form-input"
                   required
-                  placeholder="Sobre o que quer conversar?"
+                  placeholder="Sobre o que gostaria de conversar?"
                 />
+                <div class="input-border"></div>
               </div>
 
               <div class="form-group">
                 <label for="message">
                   <i class="fas fa-comment"></i>
-                  <span>Mensagem</span>
+                  Mensagem
                 </label>
                 <textarea
                   id="message"
-                  class="form-control"
+                  class="form-input"
                   required
-                  placeholder="Descreva sua ideia ou proposta..."
+                  rows="5"
+                  placeholder="Descreva sua proposta ou dúvida..."
                 ></textarea>
+                <div class="input-border"></div>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-icon full-width">
-                <span>Enviar Mensagem</span>
-                <i class="fas fa-paper-plane"></i>
-              </button>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary btn-submit">
+                  <span>Enviar Mensagem</span>
+                  <div class="btn-icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  <div class="btn-loading">
+                    <div class="loading-spinner"></div>
+                  </div>
+                </button>
+
+                <div class="form-note">
+                  <i class="fas fa-shield-alt"></i>
+                  Seus dados estão seguros e não serão compartilhados
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -462,109 +757,221 @@
 
     <!-- Footer -->
     <footer>
+      <div class="footer-background">
+        <div class="footer-wave"></div>
+      </div>
+
       <div class="container">
         <div class="footer-content">
-          <div class="footer-brand">
-            <a href="#home" class="logo">
-              <span class="logo-text"
-                >Flávio<span class="logo-dot">.</span></span
-              >
-            </a>
-            <p class="footer-tagline">
-              Soluções digitais aplicadas à logística e melhoria de processos
-            </p>
-            <p class="footer-mission">
-              Transformando operações através da tecnologia e análise crítica
-            </p>
+          <div class="footer-main">
+            <div class="footer-brand">
+              <a href="#home" class="logo">
+                <span class="logo-text"
+                  >Flávio<span class="logo-dot">.</span>Monteiro</span
+                >
+              </a>
+              <p class="footer-tagline">
+                Soluções digitais aplicadas à logística e melhoria de processos
+              </p>
+            </div>
+
+            <div class="footer-newsletter">
+              <h4>Receba atualizações</h4>
+              <p>Novos projetos e insights sobre logística e tecnologia</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" required />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
           </div>
 
-          <div class="footer-grid">
-            <div class="footer-column">
-              <h4>Navegação Rápida</h4>
+          <div class="footer-links">
+            <div class="link-column">
+              <h4>Navegação</h4>
               <ul>
                 <li>
-                  <a href="#home"
-                    ><i class="fas fa-chevron-right"></i> Início</a
-                  >
+                  <a href="#home"><span class="link-number">01</span>Início</a>
                 </li>
                 <li>
-                  <a href="#about"
-                    ><i class="fas fa-chevron-right"></i> Sobre</a
-                  >
+                  <a href="#about"><span class="link-number">02</span>Sobre</a>
                 </li>
                 <li>
                   <a href="#projects"
-                    ><i class="fas fa-chevron-right"></i> Projetos</a
+                    ><span class="link-number">03</span>Projetos</a
                   >
                 </li>
                 <li>
                   <a href="#contact"
-                    ><i class="fas fa-chevron-right"></i> Contato</a
+                    ><span class="link-number">04</span>Contato</a
                   >
                 </li>
               </ul>
             </div>
 
-            <div class="footer-column">
+            <div class="link-column">
               <h4>Competências</h4>
               <ul>
-                <li><i class="fas fa-check"></i> Análise de Dados</li>
-                <li><i class="fas fa-check"></i> Automação de Processos</li>
-                <li><i class="fas fa-check"></i> Logística Operacional</li>
-                <li><i class="fas fa-check"></i> Soluções Digitais</li>
+                <li><a href="#about">Análise de Dados</a></li>
+                <li><a href="#about">Automação de Processos</a></li>
+                <li><a href="#about">Logística Operacional</a></li>
+                <li><a href="#about">Soluções Digitais</a></li>
               </ul>
             </div>
 
-            <div class="footer-column">
+            <div class="link-column">
               <h4>Recursos</h4>
               <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fas fa-file-alt"></i> Estudos de Caso</a
-                  >
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-code"></i> Scripts Úteis</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-chart-line"></i> Métricas</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-book"></i> Documentação</a>
-                </li>
+                <li><a href="#projects">Portfólio</a></li>
+                <li><a href="#contact">Orçamento</a></li>
+                <li><a href="#contact">Consultoria</a></li>
+                <li><a href="#contact">Mentoria</a></li>
               </ul>
             </div>
           </div>
-        </div>
 
-        <div class="footer-bottom">
-          <div class="copyright">
-            <p>
-              &copy; <span id="currentYear"></span> Flávio Monteiro. Todos os
-              direitos reservados.
-            </p>
-            <p class="footer-note">
-              Desenvolvido com foco em eficiência e resultados mensuráveis
-            </p>
-          </div>
-          <div class="footer-theme">
-            <span>Modo:</span>
-            <div class="theme-switch">
-              <button class="theme-option active" data-theme="light">
-                Claro
-              </button>
-              <button class="theme-option" data-theme="dark">Escuro</button>
+          <div class="footer-bottom">
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="Behance">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+
+            <div class="copyright">
+              <p>
+                &copy; <span id="currentYear"></span> Flávio Monteiro. Todos os
+                direitos reservados.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-item">Python</span>
+                <span class="tech-item">SQL Server</span>
+                <span class="tech-item">Bi</span>
+                <span class="tech-item">Automate</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Botão Voltar ao Topo -->
-    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
-      <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- Botões de Ação -->
+    <div class="action-buttons">
+      <button
+        class="action-btn theme-toggle"
+        id="themeToggle"
+        aria-label="Alternar tema"
+      >
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
 
+      <button
+        class="action-btn back-to-top"
+        id="backToTop"
+        aria-label="Voltar ao topo"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </button>
+
+      <button
+        class="action-btn download-cv"
+        id="downloadCV"
+        aria-label="Baixar currículo"
+      >
+        <i class="fas fa-download"></i>
+        <span class="btn-tooltip">Baixar CV</span>
+      </button>
+    </div>
+
+    <!-- Modal de Detalhes do Projeto -->
+    <div class="project-modal" id="projectModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-badge" id="modalBadge">Em desenvolvimento</div>
+          <h3 class="modal-title" id="modalTitle">
+            Controle de Produção e Qualidade
+          </h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-image" id="modalImage"></div>
+
+          <div class="modal-details">
+            <div class="detail-section">
+              <h4><i class="fas fa-info-circle"></i> Descrição</h4>
+              <p id="modalDescription">
+                Estudo de caso baseado em ambiente operacional real, com foco no
+                controle de produção, padronização de processos e redução de
+                falhas.
+              </p>
+            </div>
+
+            <div class="detail-section">
+              <h4><i class="fas fa-tags"></i> Tags</h4>
+              <div class="modal-tags" id="modalTags"></div>
+            </div>
+
+            <div class="detail-section">
+              <h4><i class="fas fa-code"></i> Tecnologias</h4>
+              <div class="modal-tech" id="modalTech"></div>
+            </div>
+
+            <div class="progress-section">
+              <h4><i class="fas fa-chart-line"></i> Progresso</h4>
+              <div class="progress-container">
+                <div class="progress-bar">
+                  <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="progress-text" id="progressText">0%</span>
+              </div>
+
+              <div class="progress-dates">
+                <div class="date-item">
+                  <span class="date-label">Início</span>
+                  <span class="date-value" id="startDate">01/03/2024</span>
+                </div>
+                <div class="date-item">
+                  <span class="date-label">Previsão</span>
+                  <span class="date-value" id="endDate">30/06/2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-outline" id="modalLive">
+            <i class="fas fa-external-link-alt"></i>
+            <span>Ver Demo</span>
+          </button>
+          <button class="btn btn-primary" id="modalCode">
+            <i class="fab fa-github"></i>
+            <span>Código</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="main.js"></script>
   </body>
 </html>
