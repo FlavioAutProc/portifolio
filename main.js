@@ -16,7 +16,7 @@ const projects = [
     category: "processos",
     tags: ["Análise de Processos", "Melhoria Contínua"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    status: "concluido"
+    status: "em-desenvolvimento"
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const projects = [
     category: "dados",
     tags: ["Excel", "SQL Server", "Dados"],
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    status: "concluido"
+    status: "em-desenvolvimento"
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const projects = [
     category: "automacao",
     tags: ["Lógica", "Controle", "Sistemas Simples"],
     image: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    status: "concluido"
+    status: "em-desenvolvimento"
   },
   // {
   //   id: 7,
